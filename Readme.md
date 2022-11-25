@@ -1,0 +1,11 @@
+# tk students registration
+
+## about
+
+Hello, this is a python application inspired by this [video](https://www.youtube.com/watch?v=JUGEkFDeuwg "Student Registration System with Database Using Python").
+
+![sample](./assets/images/sample.png)
+
+
+## how  run?
+`python3 main.py`
