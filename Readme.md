@@ -4,7 +4,7 @@
 
 Hello, this is a python application inspired by this [video](https://www.youtube.com/watch?v=JUGEkFDeuwg "Student Registration System with Database Using Python").
 
-![sample](./assets/images/sample.png)
+![sample](./assets/images/ttksample.png)
 
 
 ## how  run?
