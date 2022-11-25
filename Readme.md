@@ -8,4 +8,6 @@ Hello, this is a python application inspired by this [video](https://www.youtube
 
 
 ## how  run?
+`python3 -m pip install -r requirements.txt`
+
 `python3 main.py`

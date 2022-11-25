@@ -1,6 +1,7 @@
 import os
 import tkinter as tk
-import tkinter.ttk as ttk
+# import tkinter.ttk as ttk
+import ttkbootstrap as ttk
 from app.constants import ICONS_DIR
 
 
@@ -22,6 +23,7 @@ class SearchBar(ttk.Frame):
         self.button = ttk.Button(self)
         self.button.configure(text='Search')
         self.button.configure(image=self.search_icon, compound=tk.LEFT)
+        self.button['bootstyle'] = 'outline-default'
         self.button.pack(side=tk.RIGHT, fill=tk.BOTH)
 
     def get_value(self) -> str:

@@ -1,6 +1,7 @@
 import os
 import tkinter as tk
-import tkinter.ttk as ttk
+# import tkinter.ttk as ttk
+import ttkbootstrap as ttk
 import typing
 from app.constants import ICONS_DIR
 from app.view.components.crud_buttons import CrudButtons
@@ -22,6 +23,7 @@ class Students(Generic):
         self.clear_button = ttk.Button(self.content)
         self.clear_button.configure(text='Clear')
         self.clear_button.configure(image=self.clear_icon, compound=tk.LEFT)
+        self.clear_button['bootstyle'] = 'outline-default'
         self.clear_button.pack(side=tk.TOP, anchor=tk.W)
 
         panedwindow = ttk.PanedWindow(self.content, orient=tk.HORIZONTAL)

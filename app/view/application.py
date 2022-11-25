@@ -1,9 +1,9 @@
 import tkinter as tk
 from tkinter import messagebox
-import tkinter.ttk as ttk
+# import tkinter.ttk as ttk
+import ttkbootstrap as ttk
 import typing
 from app.view.components.nav import Nav
-from app.controller.application_controller import ApplicationController
 from app.view.pages.about import About
 from app.view.pages.home import Home
 from app.view.pages.students import Students
@@ -18,10 +18,8 @@ class Application(tk.Tk):
 
         # style
         style = ttk.Style()
-        style.theme_use('clam')
+        style.theme_use('cosmo')
 
-        style = ttk.Style()
-        style.theme_use('clam')
         # widgets.
         self.nav = Nav(self)
         self.nav.pack(side=tk.TOP, fill=tk.X)

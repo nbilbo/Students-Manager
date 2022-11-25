@@ -1,10 +1,8 @@
 import os
 import tkinter as tk
-import tkinter.ttk as ttk
+# import tkinter.ttk as ttk
+import ttkbootstrap as ttk
 from app.constants import ICONS_DIR
-
-
-NAV_BUTTON_FONT = ('Arial', 12, 'normal')
 
 
 class Nav(ttk.Frame):
@@ -16,8 +14,8 @@ class Nav(ttk.Frame):
         )
         self.home_button = ttk.Button(self)
         self.home_button.configure(text='Home')
-        self.home_button.configure(style='NavButton.TButton')
         self.home_button.configure(image=self.home_icon, compound=tk.LEFT)
+        self.home_button['bootstyle'] = 'outline-default'
         self.home_button.pack(side=tk.LEFT)
 
         self.students_icon = tk.PhotoImage(
@@ -25,10 +23,10 @@ class Nav(ttk.Frame):
         )
         self.students_button = ttk.Button(self)
         self.students_button.configure(text='Students')
-        self.students_button.configure(style='NavButton.TButton')
         self.students_button.configure(
             image=self.students_icon, compound=tk.LEFT
         )
+        self.students_button['bootstyle'] = 'outline-default'
         self.students_button.pack(side=tk.LEFT)
 
         self.about_icon = tk.PhotoImage(
@@ -36,9 +34,6 @@ class Nav(ttk.Frame):
         )
         self.about_button = ttk.Button(self)
         self.about_button.configure(text='About')
-        self.about_button.configure(style='NavButton.TButton')
         self.about_button.configure(image=self.about_icon, compound=tk.LEFT)
+        self.about_button['bootstyle'] = 'outline-default'
         self.about_button.pack(side=tk.LEFT)
-
-        style = ttk.Style()
-        style.configure('NavButton.TButton', font=NAV_BUTTON_FONT)
