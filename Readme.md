@@ -1,4 +1,4 @@
-# tk students registration
+# Students-Manager
 This project is a simple student registration system where users can add, update, and delete student records. The project uses the MVC pattern and is built using the tkinter framework.
 inspired by this [video](https://www.youtube.com/watch?v=JUGEkFDeuwg "Student Registration System with Database Using Python")
 
